@@ -30,7 +30,6 @@ get_arch() {
 
 get_download_url() {
   local version="$1"
-  local platform="$(get_arch)"
   local arch="$(get_arch)"
   echo "https://storage.googleapis.com/container-diff/v${version}/container-diff-${arch}-amd64"  
 }
